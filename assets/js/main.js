@@ -105,6 +105,7 @@ function navLanguage() {
 
 		/*==================== SKILLS ====================*/
 		document.getElementById("section__title__skills-lg").innerText = "Habilidades";
+		document.getElementById("section__skills-met-lg").innerText = "Metodologías Ágiles";
 
 		/*==================== PORTFOLIO ====================*/
 		document.getElementById("section__title__portfolio-lg").innerText = "Portafolio";
@@ -189,7 +190,7 @@ function navLanguage() {
 
 		/*==================== SKILLS ====================*/
 		document.getElementById("section__title__skills-lg").innerText = "Skills";
-
+		document.getElementById("section__skills-met-lg").innerText = "Agile Methodologies";
 		/*==================== PORTFOLIO ====================*/
 
 		document.getElementById("section__title__portfolio-lg").innerText = "Portfolio";
@@ -279,7 +280,24 @@ var swiper = new Swiper(".swiper", {
 let skills__frontOpen = false,
 	skills__backOpen = false,
 	skills__designOpen = false;
+skills__metOpen = false;
 
+function skills__design() {
+	skills__designOpen = !skills__designOpen;
+	if (skills__designOpen) {
+		document.getElementById("skills__design").classList.remove("skills__close");
+		document.getElementById("skills__design").classList.add("skills__content");
+		document.getElementById("skills__design").classList.add("skills__open");
+		document.getElementById("skills__list-design").classList.add("skills-down-design");
+		document.getElementById("skills__list-design").classList.remove("skills-up-design");
+	} else {
+		document.getElementById("skills__list-design").classList.add("skills-up-design");
+		document.getElementById("skills__list-design").classList.remove("skills-down-design");
+		document.getElementById("skills__design").classList.remove("skills__open");
+		document.getElementById("skills__design").classList.remove("skills__content");
+		document.getElementById("skills__design").classList.add("skills__close");
+	}
+}
 function skills__front() {
 	skills__frontOpen = !skills__frontOpen;
 	if (skills__frontOpen) {
@@ -313,22 +331,24 @@ function skills__back() {
 		document.getElementById("skills__back").classList.remove("skills__open");
 	}
 }
-function skills__design() {
-	skills__designOpen = !skills__designOpen;
-	if (skills__designOpen) {
-		document.getElementById("skills__design").classList.remove("skills__close");
-		document.getElementById("skills__design").classList.add("skills__content");
-		document.getElementById("skills__design").classList.add("skills__open");
-		document.getElementById("skills__list-design").classList.add("skills-down-design");
-		document.getElementById("skills__list-design").classList.remove("skills-up-design");
+
+function skills__met() {
+	skills__metOpen = !skills__metOpen;
+	if (skills__metOpen) {
+		document.getElementById("skills__met").classList.remove("skills__close");
+		document.getElementById("skills__met").classList.add("skills__content");
+		document.getElementById("skills__met").classList.add("skills__open");
+		document.getElementById("skills__list-met").classList.add("skills-down-met");
+		document.getElementById("skills__list-met").classList.remove("skills-up-met");
 	} else {
-		document.getElementById("skills__list-design").classList.add("skills-up-design");
-		document.getElementById("skills__list-design").classList.remove("skills-down-design");
-		document.getElementById("skills__design").classList.remove("skills__open");
-		document.getElementById("skills__design").classList.remove("skills__content");
-		document.getElementById("skills__design").classList.add("skills__close");
+		document.getElementById("skills__list-met").classList.add("skills-up-met");
+		document.getElementById("skills__list-met").classList.remove("skills-down-met");
+		document.getElementById("skills__met").classList.add("skills__close");
+		document.getElementById("skills__met").classList.remove("skills__content");
+		document.getElementById("skills__met").classList.remove("skills__open");
 	}
 }
+
 /*==================== QUALIFICATION TABS ====================*/
 
 /*==================== SERVICES MODAL ====================*/

@@ -295,6 +295,36 @@
 	}
 }
 
+.skills-up-met {
+	animation-name: skills-up-met;
+	animation-duration: 0.45s;
+}
+
+@keyframes skills-up-met {
+	from {
+		height: 136px;
+		margin-bottom: 3rem;
+	}
+	to {
+		transform: translateY(0px);
+	}
+}
+
+.skills-down-met {
+	animation-name: skills-down-met;
+	animation-duration: 0.3s;
+}
+
+@keyframes skills-down-met {
+	from {
+		overflow: hidden;
+		height: 0px;
+	}
+	to {
+		height: 136px;
+	}
+}
+
 .services-on {
 	animation-name: services-on;
 	animation-duration: 0.6s;
