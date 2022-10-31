@@ -234,6 +234,8 @@ function navLanguage() {
 	}
 }
 
+navLanguage();
+
 /*==================== DARK LIGHT THEME ====================*/
 
 let navThemeOpen = false;
