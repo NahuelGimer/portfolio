@@ -140,9 +140,6 @@ function navLanguage() {
 		document.getElementById('contact__message-lg').innerText = 'Mensaje';
 		document.getElementById('contact__submit-lg').innerText = 'Envíar';
 		*/
-
-		/*==================== FOOTER ====================*/
-		document.getElementById("footer-lg").innerText = " Nahuel Gimer. Todos los Derechos Reservados.";
 	} else {
 		document.getElementById("nav__language_letter-static").classList.remove("active-lg");
 		document.getElementById("nav__language_letter-changer").classList.remove("active-lg");
@@ -228,9 +225,6 @@ function navLanguage() {
 		document.getElementById('contact__message-lg').innerText = 'Message';
 		document.getElementById('contact__submit-lg').innerText = 'Send';
 		*/
-
-		/*==================== FOOTER ====================*/
-		document.getElementById("footer-lg").innerText = " Nahuel Gimer. All Rights Reserved.";
 	}
 }
 
