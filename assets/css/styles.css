@@ -870,8 +870,15 @@ main {
 	cursor: grabbing;
 }
 
+.portfolio__data span {
+	position: relative;
+	top: 5px;
+	font-size: 1.1rem;
+}
+
 .portfolio__title {
 	margin-top: var(--mb-2);
+	font-size: 1.2rem;
 }
 
 .portfolio__description {
