@@ -242,7 +242,7 @@
 
 @keyframes skills-up-back {
 	from {
-		height: 24px;
+		height: 136px;
 		margin-bottom: 3rem;
 	}
 	to {
@@ -261,7 +261,7 @@
 		height: 0px;
 	}
 	to {
-		height: 24px;
+		height: 136px;
 	}
 }
 
