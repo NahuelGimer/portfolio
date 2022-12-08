@@ -56,10 +56,10 @@ let navLanguageOpen = false;
 function navLanguage() {
 	navLanguageOpen = !navLanguageOpen;
 	if (navLanguageOpen) {
-		document.getElementById("nav__language_letter-static").classList.add("active-lg");
-		document.getElementById("nav__language_letter-changer").classList.add("active-lg");
 		document.getElementById("nav__language_letter-changer").classList.remove("fa-e");
 		document.getElementById("nav__language_letter-changer").classList.add("fa-s");
+		document.getElementById("nav__language_letter-static").classList.remove("active-lg");
+		document.getElementById("nav__language_letter-changer").classList.remove("active-lg");
 		/*
 		document.getElementById('contact__status__ok-lg').innerText =
 			'Gracias por tu mensaje, me pondré en contacto contigo en la brevedad.';
@@ -141,8 +141,8 @@ function navLanguage() {
 		document.getElementById('contact__submit-lg').innerText = 'Envíar';
 		*/
 	} else {
-		document.getElementById("nav__language_letter-static").classList.remove("active-lg");
-		document.getElementById("nav__language_letter-changer").classList.remove("active-lg");
+		document.getElementById("nav__language_letter-static").classList.add("active-lg");
+		document.getElementById("nav__language_letter-changer").classList.add("active-lg");
 		document.getElementById("nav__language_letter-changer").classList.add("fa-e");
 		document.getElementById("nav__language_letter-changer").classList.remove("fa-s");
 
